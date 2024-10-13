@@ -13,7 +13,7 @@ const Items = ({ items }) => {
     // Method - 2 for destructing data
     const {data, isLoading, isError, error} = useQuery({
         queryKey: ['task'],
-        queryFn: () => customFetch.get('/1234')
+        queryFn: () => customFetch.get('/')
     })
 
     if(isLoading){
